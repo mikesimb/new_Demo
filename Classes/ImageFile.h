@@ -50,8 +50,8 @@ class CImageFile: public Ref
 {
 private:
     __String  m_ImageFileName;
-    
-    ImgDesc * ImgNode;
+    ImgHead  m_ImgHead;
+    ImgBody * m_ImgBody;
 protected:
     
 public:
@@ -60,7 +60,7 @@ public:
     
     
     
-    bool LoadBinFile();
+    bool LoadBinFile(char * cfilename);
     
     void SetFileName(char * cfilename);
     
