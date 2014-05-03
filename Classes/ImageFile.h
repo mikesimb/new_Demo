@@ -12,16 +12,6 @@
 #include <iostream>
 #include "cocos2d.h"
 using namespace cocos2d;
-typedef struct tgaImgDesc
-{
-	//unsigned short idx;
-	unsigned short x;
-	unsigned short y;
-	unsigned short w;
-	unsigned short h;
-	short cx;
-	short cy;
-} ImgDesc, *pImgDesc;
 
 
 typedef struct tagImgHead
@@ -52,6 +42,7 @@ private:
     __String  m_ImageFileName;
     ImgHead  m_ImgHead;
     ImgBody * m_ImgBody;
+    int   m_ImagesCount;
 protected:
     
 public:
@@ -61,6 +52,10 @@ public:
     
     
     bool LoadBinFile(char * cfilename);
+    
+    ImgBody* getImgItem(int index);
+    
+    int getItemcount ();
     
     void SetFileName(char * cfilename);
     

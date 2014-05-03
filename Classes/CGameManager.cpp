@@ -8,6 +8,7 @@
 
 #include "CGameManager.h"
 #include "HelloWorldScene.h"
+#include "TestScence.h"
 
 using namespace cocos2d;
 
@@ -31,6 +32,7 @@ GameManager::~GameManager()
 void GameManager::Init()
 {
     m_GameSence = HelloWorld::createScene();
+    m_GameSence = Test::createScene();
     m_map = new CMap();
     m_map->LoadMap("map/m5.tmx");
 }

@@ -20,6 +20,7 @@ class GameManager :public Ref
 {
 private:
     Scene* m_GameSence;
+    Scene * m_TestSence;
     CMap* m_map;
 public:
     Scene* getGameSence();

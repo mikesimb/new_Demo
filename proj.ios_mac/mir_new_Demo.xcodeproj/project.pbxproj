@@ -69,6 +69,8 @@
 		D44C620E132DFF430009C878 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620D132DFF430009C878 /* AVFoundation.framework */; };
 		D44C6210132DFF4E0009C878 /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D44C620F132DFF4E0009C878 /* AudioToolbox.framework */; };
 		D6B0611B1803AB670077942B /* CoreMotion.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D6B0611A1803AB670077942B /* CoreMotion.framework */; };
+		DB282B331913C4AC0043123F /* TestScence.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB282B311913C4AC0043123F /* TestScence.cpp */; };
+		DB282B3A1913FEF80043123F /* Actor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DB282B381913FEF80043123F /* Actor.cpp */; };
 		DB4153F81911F3B100FCBF01 /* map in Resources */ = {isa = PBXBuildFile; fileRef = DB4153F71911F3B100FCBF01 /* map */; };
 		DBB6AAB8191227C3007761FF /* CGameManager.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBB6AAB7191227C3007761FF /* CGameManager.cpp */; };
 		DBB6AABB1912283C007761FF /* Map.cpp in Sources */ = {isa = PBXBuildFile; fileRef = DBB6AABA1912283C007761FF /* Map.cpp */; };
@@ -273,6 +275,10 @@
 		D44C620D132DFF430009C878 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		D44C620F132DFF4E0009C878 /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		D6B0611A1803AB670077942B /* CoreMotion.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMotion.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/CoreMotion.framework; sourceTree = DEVELOPER_DIR; };
+		DB282B311913C4AC0043123F /* TestScence.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = TestScence.cpp; path = ../proj.ios_mac/TestScence.cpp; sourceTree = "<group>"; };
+		DB282B321913C4AC0043123F /* TestScence.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = TestScence.h; path = ../proj.ios_mac/TestScence.h; sourceTree = "<group>"; };
+		DB282B381913FEF80043123F /* Actor.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Actor.cpp; path = ../Classes/Actor.cpp; sourceTree = "<group>"; };
+		DB282B391913FEF80043123F /* Actor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Actor.h; path = ../Classes/Actor.h; sourceTree = "<group>"; };
 		DB4153F71911F3B100FCBF01 /* map */ = {isa = PBXFileReference; lastKnownFileType = folder; path = map; sourceTree = "<group>"; };
 		DBB6AAB6191227C3007761FF /* CGameManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CGameManager.h; path = ../Classes/CGameManager.h; sourceTree = "<group>"; };
 		DBB6AAB7191227C3007761FF /* CGameManager.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = CGameManager.cpp; path = ../Classes/CGameManager.cpp; sourceTree = "<group>"; };
@@ -352,6 +358,8 @@
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				DB282B311913C4AC0043123F /* TestScence.cpp */,
+				DB282B321913C4AC0043123F /* TestScence.h */,
 				DBB6AAB91912283C007761FF /* Map.h */,
 				DBB6AABA1912283C007761FF /* Map.cpp */,
 				DBB6AAB6191227C3007761FF /* CGameManager.h */,
@@ -364,6 +372,8 @@
 				DBB6AAC219123B7F007761FF /* ImageFile.h */,
 				DBB6AAC419123D7E007761FF /* global.cpp */,
 				DBB6AAC519123D7E007761FF /* global.h */,
+				DB282B381913FEF80043123F /* Actor.cpp */,
+				DB282B391913FEF80043123F /* Actor.h */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -698,7 +708,9 @@
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				DBB6AAC319123B7F007761FF /* ImageFile.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
+				DB282B3A1913FEF80043123F /* Actor.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
+				DB282B331913C4AC0043123F /* TestScence.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				DBB6AAC619123D7E007761FF /* global.cpp in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
