@@ -17,12 +17,13 @@ using namespace cocos2d;
 class CActor :public Ref
 {
 private:
-    //首先需要一个现实图片的地方
+    //首先需要一个现实图片的地方这里只是人物，还会有武器等等一系列的东西
     Sprite * m_sprite;
     //记录方向
     int  m_iDir;
     //记录角色当前状态
-    int  m_state;//空闲，跑，打，释放魔法，死亡，挖这个状态表示了他当前在做这个动作中。
+    int  m_Curstate;//空闲，跑，打，释放魔法，死亡，挖这个状态表示了他当前在做这个动作中。
+    int  m_CurFrame;//当前运行在第几帧
     //消息队列
     Vector<int> m_Msglist；
     
